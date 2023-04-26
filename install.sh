@@ -18,7 +18,7 @@ apt install tor -y
 cp /etc/tor/torrc /etc/tor/torrc.backup
 cat > /etc/tor/torrc << EOF
 SocksPort 0.0.0.0:9050
-SocksPolicy accept 0.0.0.0/32
+SocksPolicy accept 0.0.0.0/0
 RunAsDaemon 1
 DataDirectory /var/lib/tor
 EOF
