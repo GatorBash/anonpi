@@ -22,3 +22,6 @@ SocksPolicy accept 0.0.0.0/0
 RunAsDaemon 1
 DataDirectory /var/lib/tor
 EOF
+
+systemctl daemon-reload
+wait
