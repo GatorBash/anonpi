@@ -13,7 +13,7 @@ then
 fi
 
 apt-get update -q -y
-apt install tor -y
+apt install tor polipo -y
 
 cp /etc/tor/torrc /etc/tor/torrc.backup
 cat > /etc/tor/torrc << EOF
@@ -25,3 +25,5 @@ EOF
 
 systemctl daemon-reload
 wait
+
+
